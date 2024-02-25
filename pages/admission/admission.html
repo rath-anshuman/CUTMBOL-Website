@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/admission.css">
+    <link rel='shortcut icon' href='/img/logo_fv.png' type='image/x-icon' />
+    <link rel="shortcut icon" href="/resources/images/logo/logo_fv.png" type="image/x-icon">
+    <title>CUTM Balangir - Admission Form</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="title">
+            Admission Form
+        </div>
+        <div class="logo">
+            <img src="/resources/images/logo/logo.png" alt="cutm logo">
+        </div>
+        <div class="form">
+
+            <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){sayThanks()}"></iframe>
+
+            <form
+                action="https://script.google.com/macros/s/AKfycbyOFh0nfqpY17WD79hRgAf4hCAIr-eUi1iK85ZBJ2H4JVQ25XaxQWzMStJmu30_KIs9/exec" method="POST" onsubmit="submitted=true" target="hidden_iframe">
+
+                <div class="input-field">
+                    <Label>First Name</Label>
+                    <input type="text" id="student_first_name" class="input" name="First_Name" required>
+                </div>
+                <div class="input-field">
+                    <Label>Last Name</Label>
+                    <input type="text" id="student_last_name" class="input" name="Last_Name" required>
+                </div>
+                
+                <div class="input-field">
+                    <Label>Gender</Label>
+                    <div class="custom-select">
+                        <select id="student_gender" name="Gender" required>
+                            <option value="none">Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-field">
+                    <Label>Email Address</Label>
+                    <input type="email" id="student_email" class="input" name="Email" required>
+                </div>
+                <div class="input-field">
+                    <Label>Phone Number</Label>
+                    <input type="number" id="student_phone" class="input" name="Phone" required>
+                </div>
+                <div class="input-field">
+                    <Label>10th Percentage</Label>
+                    <input type="number" id="student_10th" class="input" name="10th_Percentage" placeholder="%" required>
+                </div>
+                <div class="input-field">
+                    <Label>12th Percentage</Label>
+                    <input type="number" id="student_12th" class="input" name="12th_Percentage" placeholder="%" required>
+                </div>
+                <div class="input-field">
+                    <Label>Last Passout College</Label>
+                    <input type="text" id="student_last_college" class="input" name="Last_College" placeholder="" required>
+                </div>
+                <div class="input-field">
+                    <Label>Degree</Label>
+                    <div class="custom-select">
+                        <select id="student_degree" name="Degree" required>
+                            <option value="none">Choose</option>
+                            <option value="Bachelor">Bachelor</option>
+                            <option value="Masters">Masters</option>
+                            <option value="Diploma">Diploma</option>
+                        </select>
+                    </div>
+                </div>                
+                <div class="input-field">
+                    <Label>Subject Interest</Label>
+                    <div class="custom-select">
+                        <select id="student_interest" name="Subject_Interest" required>
+                            <option value="none">Choose</option>
+                            <option value="BCA">BCA</option>
+                            <option value="MCA">MCA</option>
+                            <option value="IT">Information Technology (IT)</option>
+                            <option value="Physics">Physics</option>
+                            <option value="Chemistry">Chemistry</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Zoology">Zoology</option>
+                            <option value="Botany">Botany</option>
+                            <option value="B.Pharm">B.Pharm</option>
+                            <option value="D.Pharm">D.Pharm</option>
+                            <option value="DMLT">DMLT</option>
+                        </select>
+                    </div>
+                </div>                
+                <div class="input-field">
+                    <Label>Address</Label>
+                    <textarea id="student_address" name="Address" class="textarea" required></textarea>
+                </div>
+                <div class="input-field">
+                    <input type="submit" value="Apply" class="btn"  onclick="displayWait()">
+                </div>
+
+            </form>
+            <p id="text_wait"></p>
+
+        </div>
+    </div>
+
+    <script src="/js/admission.js"></script>
+</body>
+
+</html>
